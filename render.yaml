@@ -3,6 +3,7 @@ services:
   - type: web
     name: aura-fashion-backend
     runtime: python
+    plan: free
     region: oregon
     rootDir: backend
     buildCommand: pip install -r requirements.txt
@@ -15,6 +16,7 @@ services:
   - type: web
     name: aura-fashion-frontend
     runtime: static
+    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
