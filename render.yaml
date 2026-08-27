@@ -12,8 +12,9 @@ services:
         value: 3.10.12
 
   # React + Vite Frontend Static Site
-  - type: static
+  - type: web
     name: aura-fashion-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
